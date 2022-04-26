@@ -4,5 +4,5 @@
   <a href="https://jielinwang.github.io/">Visit portfolio Page</a>
 </p>
 
-### :butterfly : Color Palette
-<img src="https://coolors.co/cb997e-ddbea9-ffe8d6-b7b7a4-a5a58d-6b705c">
+### 🦋 : Color Palette
+**[Palette](https://coolors.co/palette/cb997e-ddbea9-ffe8d6-b7b7a4-a5a58d-6b705c)**
