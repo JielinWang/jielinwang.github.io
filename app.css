@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  font-family: 'Playfair Display', serif;
+  margin: 2;
+  padding: 0;
+  animation: gradientAnimation 15s ease infinite;
+  height: 100vh;
+  text-align: center;
+  color: #582f0e;
+  font-size: 1.5em;
+}
+
+#plane {
+  color: #ffe8d6;
+  font-size: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 75%;
+  width: 95%;
+  height: 100%;
+}
+
+img.bio-pic {
+  border-radius: 25%;
+  display: block;
+  margin: 20px auto;
+  width: 20%;
+}
+
+div.row {
+  margin: 30px;
+}
+
+#collapser {
+  font-size: 1.5em;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.content-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.content-row {
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-between;
+  align-items: center;
+  
+}
+
+.card-img-top {
+  padding: 5px;
+  border-radius: 15px;
+  width: auto;
+}
+
+.card {
+  margin: 0.5em 0;
+  padding: 5px;
+  border-radius: 5px;
+  border:dotted 0.2em #333d29;
+  background-color: rgba(255, 255, 255, 0.048);
+  color: #582f0e;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  background-color: #b6ad90;
+  transform: scale(1.03);
+}
+
+.btn-blue {
+  background-color: #936639;opacity:90%;
+}
+
+.btn-blue:hover {
+  background-color: white;
+}
+
+.btn-green {
+  background-color: #656d4a;opacity:90%;
+}
+
+.btn-green:hover {
+  background-color: white;
+}
+
+.list.col li {
+  list-style-type: none;  
+  background-color: #c2c5aa;opacity:80%;
+  
+}
+
+
+
+.icon-box.col {
+  display: flex;
+  flex-direction: row;
+  font-size: 35px!important;
+}
+
+.icon-box.col a {
+  color: #582f0e;
+  margin: auto 40px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.icon-box.col a .layer {
+  width: 70px;
+  height: 70px;
+  transition: 0.35;
+}
+
+.icon-box.col a .layer i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
+  border: 1px solid var(--c);
+  border-radius: 6px;
+  transition: 0.35;
+}
+
+.icon-box.col a .layer i .fa {
+  font-size: 35px;
+  text-align: center;
+  line-height: 70px;
+  color: var(--c);
+}
+
+.icon-box.col a .text {
+  position: absolute;
+  bottom: 0;
+  opacity:  0;
+  width: 100%;
+  text-align: center;
+  color: var(--c);
+  transition: 0.35;
+}
+
+.icon-box.col a:hover .text {
+  bottom: -35px;
+  opacity: 1;
+}
+
+.icon-box.col a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.icon-box.col a:hover .layer i:nth-child(1) {
+  opacity: 0.2;
+  transform: translate(0,0);
+}
+
+.icon-box.col a:hover .layer i:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px,-5px);
+}
+
+.icon-box.col a:hover .layer i:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px,-10px);
+}
+
+.icon-box.col a:hover .layer i:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px,-15px);
+}
+
+.icon-box.col a:hover .layer i:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px,-20px);
+}
+
+.icon-box.col a:hover .layer i{
+  box-shadow: -1px 1px 3px var(--c);
+}
+
+.icon-box.col a:nth-child(1) .layer i,
+.icon-box.col a:nth-child(1) .text {
+  --c: #12b7f5;
+}
+
+.icon-box.col a:nth-child(2) .layer i,
+.icon-box.col a:nth-child(2) .text {
+  --c: #2aae67;
+}
+
+.icon-box.col a:nth-child(3) .layer i,
+.icon-box.col a:nth-child(3) .text {
+  --c: #e79115;
+}
+
+.icon-box.col a:nth-child(4) .layer i,
+.icon-box.col a:nth-child(4) .text {
+  --c: #2075fd;
+}
+
+.icon-box.col a:nth-child(5) .layer i,
+.icon-box.col a:nth-child(5) .text {
+  --c: #2d8dc5;
+}
+
+.Contact a, .Contact p, .Contact p mark{
+  text-decoration: none;
+  color:#656d4a;
+  
+}
+.Contact p, .Contact h1.display-5 {
+  margin-left: 60%;
+  transform: skew(200deg);
+}
+footer {
+  text-align: start;
+  background-image: url('./img/footer-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes shift {
+  from {
+    background-position: 0 20%;
+  }
+
+  to {
+    background-position: 100% 30%;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #403f3e;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
